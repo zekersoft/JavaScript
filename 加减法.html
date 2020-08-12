@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>i = 10,j = 10;i+j=？</p>
+		<button onclick="mysum()">计算</button>  <!-- 注意调用的是事件方法，即mysum(),而不是mysum-->
+		<p id="sumid"></p>
+		<script>
+			function mysum(){
+				var i =10;
+				var j =10;
+				var m =i + j;
+				document.getElementById("sumid").innerHTML=m;  //将m值发送到id=sumid的p标签中，并在该行显示。
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<button onclick="myl()">点击退出</button>
+		<script>
+			function myl() {
+				var myu = confirm("确定退出？")  //定义一个变量，将消息对话框confirm（）赋值给该变量
+				if(myu == true) {
+					document.write("成功退出");
+
+				} else {
+					document.write("不退出")
+				}
+			}
+		</script>
+	</body>
+
+</html>

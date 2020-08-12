@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>加、减、乘、除运算</title>
+<script type="text/javascript">
+function calculate(){
+var num1 = parseFloat(document.getElementById("num1").value);
+var num2 = parseFloat(document.getElementById("num2").value);
+var val = document.getElementById("value").value;
+if(val=="+"){
+document.getElementById("num3").value = num1 + num2 ;
+}
+else if(val=="-"){
+document.getElementById("num3").value = num1 - num2 ;
+}
+else if(val=="*"){
+document.getElementById("num3").value = num1 * num2 ;
+}
+else if(val=="/"){
+document.getElementById("num3").value = num1 / num2 ;
+}
+
+};
+</script>
+</head>
+<!-- 
+要求采用面向对象的方式定义函数，实现加、减、乘、除运算功能。
+ -->
+<body>
+ <form>
+  <center>
+<fieldset style="height:200px;">
+<legend>请输入要运算的数</legend>
+<input type="text" id="num1" value="" />
+<select name="cal" id="value">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+<input type="text" id="num2" value=""/>=
+<input type="text" id="num3" value=""/>
+<input type="button" value="提交" onClick="calculate()"/>
+
+</fieldset>
+  </center>
+ </form>
+</body>
+</html>

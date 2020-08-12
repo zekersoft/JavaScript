@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<pre>
+在JavaScript中，我们可以在设定的时间间隔之后来执行代码，而不是在函数被调用后立即执行。
+
+计时器类型：
+一次性计时器：仅在指定的延迟时间之后触发一次。
+间隔性触发计时器：每隔一定的时间间隔就触发一次。
+计时器方法：
+<hr>
+一、计时器setInterval()
+在执行时,从载入页面后每隔指定的时间执行代码。
+
+语法:
+
+setInterval(代码,交互时间);
+参数说明：
+
+1. 代码：要调用的函数或要执行的代码串。
+2. 交互时间：周期性执行或调用表达式之间的时间间隔，以毫秒计（1s=1000ms）。
+返回值:
+一个可以传递给 clearInterval() 从而取消对"代码"的周期性执行的值。
+
+调用函数格式(假设有一个clock()函数):
+
+setInterval("clock()",1000)或setInterval(clock,1000)
+<hr>
+二、计时器setTimeout()
+setTimeout()计时器，在载入后延迟指定时间后,去执行一次表达式,仅执行一次。
+
+语法:
+
+setTimeout(代码,延迟时间);
+参数说明：
+
+1. 要调用的函数或要执行的代码串。
+2. 延时时间：在执行代码前需等待的时间，以毫秒为单位（1s=1000ms)。
+
+当我们打开网页3秒后，在弹出一个提示框，代码如下:
+
+当按钮start被点击时，setTimeout()调用函数
+<hr>
+三、取消计时器clearTimeout()
+setTimeout()和clearTimeout()一起使用，停止计时器。
+语法:
+clearTimeout(id_of_setTimeout)
+参数说明:
+id_of_setTimeout：由 setTimeout() 返回的 ID 值。该值标识要取消的延迟执行代码块。
+</pre>
+		<script>
+			  setTimeout("alert('Hello!')", 3000 );//当我们打开网页3秒后，在弹出一个提示框，代码如下:
+		</script>
+	</body>
+</html>

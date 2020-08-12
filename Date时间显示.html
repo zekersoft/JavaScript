@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<button onclick="udate()">点击查看当前日期</button>
+		<button onclick="hdate()">点击查看手动设置的时间<button>
+		<script>
+			function udate()
+			{
+				var mdate=new Date(); //获取当前时间，默认电脑时间
+				document.write("当前时间："+mdate+"<br>");
+				document.write("今年是"+mdate.getFullYear()+"年"+"<br>");
+				document.write("本月是"+(mdate.getMonth()+1)+"月"+"<br>");
+				//.getMonth() 返回月，返回的是0-11的数字，0 表示一月，以此类推天。
+				document.write("今天是星期"+mdate.getDay()+"<br>");//.getDay() 返回星期，返回的是0-6的数字，0 表示星期天。
+			}
+			function hdate()
+			{
+				var ldate=new Date(2020,10,1);//手动设置日期
+				document.write(ldate);
+				var ndate=new Date();
+				ndate.setFullYear(2050);//设置年份
+				ndate.setMonth(3);//设置月份，3代表四月
+				document.write("<br>"+ndate);
+			}
+			
+		</script>
+	</body>
+</html>

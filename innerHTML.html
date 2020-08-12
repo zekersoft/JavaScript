@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="tom">原文本</p>
+		<script>
+			var mon=document.getElementById("tom");
+			document.write("原始内容："+mon.innerHTML+"<br>");
+			mon.innerHTML="经innerHTML后的替换文本";
+			document.write(mon.innerHTML);
+		</script>
+	</body>
+</html>
